@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(166, 222, 244);
+}
+
+.heading{
+    font-size: 30px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+input{
+    width: 20%;
+    height: 35px;
+    font-size: 22px;
+}
+
+canvas{
+    border: 6px solid black;
+    box-shadow: 4px 4px 4px rgb(56, 112, 207);
+    margin-top: 100px;
+}
