@@ -31,6 +31,10 @@ function gotResults(error,results){
     console.log(results);
 
     objects = results;
+    
+    synth = window.speechSynthesis;
+
+    synth.speak(utterThis);
 }
 
 function draw(){
