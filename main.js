@@ -39,7 +39,7 @@ function gotResults(error,results){
 
 function draw(){
     image(video,0,0,500,400);
-    if(value == object){
+    if(value == object[0].label){
     for(i = 0; i < objects.length; i++){
         document.getElementById("status").innerHTML = "status : object detected";
         document.getElementById("number_of_objects").innerHTML = "number of objects : " + objects.length;
