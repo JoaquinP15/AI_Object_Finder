@@ -10,7 +10,6 @@ function setup(){
     canvas = createCanvas(500,400);
     canvas.center();
     video = createCapture(VIDEO);
-    video.hide();
 }
 
 function start(){
@@ -39,8 +38,9 @@ function gotResults(error,results){
 
 function draw(){
     image(video,0,0,500,400);
-    if(value == object[0].label){
+    if(Status! = ""){
     for(i = 0; i < objects.length; i++){
+        if(value == object[i].label){
         document.getElementById("status").innerHTML = "status : object detected";
         document.getElementById("number_of_objects").innerHTML = "number of objects : " + objects.length;
 
@@ -50,6 +50,7 @@ function draw(){
         noFill();
         stroke("red");
         rect(objects[i].x,objects[i].y,objects[i].width,objects[i].height);
+    }
     }
 }
 }
